@@ -43,3 +43,35 @@ $('.about_part_two_slider_main').slick({
     nextArrow: $('.about_slider_right_arrow_two')
   });
 // ====== Script For About Page Slider - End 
+function applyLanguage(lang) {
+  const allEn = document.querySelectorAll(".lang-en");
+  const allEs = document.querySelectorAll(".lang-es");
+  const btn = document.getElementById("langToggleBtn");
+
+  // Hide all
+  allEn.forEach(el => el.classList.add("hidden"));
+  allEs.forEach(el => el.classList.add("hidden"));
+
+  // Show selected language
+  if (lang === "en") {
+    allEn.forEach(el => el.classList.remove("hidden"));
+    btn.textContent = "Spanish";
+  } else {
+    allEs.forEach(el => el.classList.remove("hidden"));
+    btn.textContent = "English";
+  }
+
+  // Save selection
+  localStorage.setItem("lang", lang);
+}
+
+document.getElementById("langToggleBtn").addEventListener("click", () => {
+  const current = localStorage.getItem("lang") || "en";
+  const newLang = current === "en" ? "es" : "en";
+  applyLanguage(newLang);
+});
+
+window.addEventListener("load", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  applyLanguage(savedLang);
+});

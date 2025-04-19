@@ -791,3 +791,20 @@ a{
     position: relative;
     z-index: 99999999999 !important;
 }
+.lang_btn{
+    font-size: 22px;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-top: 35px !important;
+    color: #DC850A;
+    border: none;
+}
+/* Hidden class for safely hiding elements without breaking layout */
+.hidden {
+    display: none !important;
+  }
+
+  .lang-en,
+  .lang-es {
+    visibility: visible;
+  }
