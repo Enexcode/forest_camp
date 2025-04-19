@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'centurygothic';
+    src: url('../font-family/centurygothic.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'centurygothic_bold';
+    src: url('../font-family/centurygothic_bold.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'save_lemon';
+    src: url('../font-family/save_lemon/save_lemon.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'emone_bold';
+    src: url('../font-family/EmOne-SemiBold.ttf') format('truetype'); /* TTF ফরম্যাট */
+}

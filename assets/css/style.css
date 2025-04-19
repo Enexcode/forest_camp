@@ -1,0 +1,793 @@
+/* ========== Font Family ==========  */
+@font-face {
+    font-family: 'centurygothic';
+    src: url('../font-family/centurygothic.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'centurygothic_bold';
+    src: url('../font-family/centurygothic_bold.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'save_lemon';
+    src: url('../font-family/save_lemon/save_lemon.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+@font-face {
+    font-family: 'emone_bold';
+    src: url('../font-family/EmOne-SemiBold.ttf') format('truetype'); /* TTF ফরম্যাট */
+}
+
+/* ========== Web Custom/Common Css ========== */
+html, body {
+    overflow-x: hidden; /* ডান-বাম স্ক্রল বন্ধ */
+    overflow-y: auto;   /* উপর-নিচ স্ক্রল থাকবে */
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* ========== Header Css Here Start ==========  */
+.navbar{
+    position: absolute;
+    z-index: 99999;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.navbar-brand img{
+    height: 131px;
+    position: absolute;
+    margin-left: 130px;
+    margin-top: 150px;
+
+}
+.nav-link{
+    color: #D1B885;
+    font-size: 31px;
+    font-family: 'centurygothic_bold';
+    margin-top: 20px;
+    transition: all .3s linear;
+    position: relative;
+}
+.nav-link:hover{
+    color: #0B8DA0;
+}
+.nav-link.active::before {
+	content: "•";
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: inherit;
+	font-size: 1.2em;
+}
+.nav-link.active{
+    margin-left: 30px;
+    color: #DC850A;
+}
+.nav-link:focus {
+	color: #D1B885;
+}
+.navbar-toggler:focus {
+	text-decoration: none;
+	outline: 0;
+	box-shadow: 0 0 0 0;
+}
+/* ========== Header Css Here End ==========  */
+/* ========== Hero/Banner Css Here Start ==========  */
+#banner_area{
+    background-image: url('../../assets/images/banner/hero-bg.png');
+    height: 100vh !important;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+
+.banner_left_side{
+    height: 100vh;
+}
+.banner_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.banner_text img{
+    height: 237px;
+}
+.banner_text h3{
+    font-size: 91px;
+    color: #DC850A;
+    margin-top: 10px;
+    font-family: 'save_lemon';
+}
+.banner_text a{
+    font-size: 50px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    font-family: 'emone_bold';
+    background-color: #DC850A;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+/* ========== Hero/Banner Css Here End ==========  */
+/* ========== About Css Here Start ==========  */
+#about_area {
+	padding-top: 260px;
+	position: relative;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-image: url(../images/about/about_bg.png); */
+	/* margin-top: -100px; */
+}
+.about_img img{
+    height: 512px;
+}
+.about_text h3{
+    font-size: 90px;
+    font-family: 'save_lemon';
+    color: #DC850A;
+}
+.about_text p{
+    font-size: 29px;
+    font-family: 'emone_bold';
+    color: #1B3A3A;
+    margin-bottom: 25px;
+}
+.about_text a {
+	font-size: 50px;
+	color: #FFFFFF;
+	margin-top: 10px;
+	font-family: 'emone_bold';
+	background-color: #DC850A;
+	padding: 10px 30px;
+	border-radius: 30px;
+    margin-top: 10px;
+}
+.about_img img{
+    border-radius: 51px;
+}
+
+.about_part_secend{
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+.about_part_secend img {
+	margin-left: -50px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	/* top: 150px; */
+	/* height: 100%; */
+}
+.about_p_secend_text{
+    margin-top: 370px;
+}
+.about_p_secend_text .about_box h2 {
+	font-size: 165px;
+	color: #DC850A;
+	font-family: 'save_lemon';
+	line-height: 100px;
+	margin-top: 140px;
+}
+.about_p_secend_text .about_box p{
+    font-size: 44px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+    line-height: 40px;
+    margin-top: 20px;
+}
+.about_for_bg{
+    position: relative;
+}
+.about_bgOver_img {
+	position: absolute;
+	width: 100%;
+	top: -10%;
+	left: 0;
+	bottom: 0;
+    z-index: -9;
+}
+.about_bg_img {
+	position: absolute;
+	height: 95%;
+	top: 0;
+	width: 95%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	margin-top: 50px;
+	z-index: -9;
+	object-fit: cover;
+}
+/* ========== About Css Here End ==========  */
+/* ========== Program Area Css Here Start ==========  */
+#program_area{
+    background-color: #CFC2AC;
+}
+.program_text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+}
+.program_text h3{
+    color: #058C9F;
+    font-size: 91px;
+    font-family: 'save_lemon';
+}
+.program_text p{
+    color: #1B3A3A;
+    font-size: 28px;
+    font-family: 'emone_bold';
+    width: 90%;
+    margin-bottom: 50px;
+}
+.program_text a {
+	font-size: 50px;
+	color: #FFFFFF;
+	margin-top: 10px;
+	font-family: 'emone_bold';
+	background-color: #DC850A;
+	padding: 10px 30px;
+	border-radius: 30px;
+	margin-top: 10px;
+}
+.program_img{
+    margin-right: -100px;
+    overflow: hidden;
+}
+.program_img img{
+    height: 100%;
+    margin-right: -100px;
+    position: relative;
+    overflow: hidden;
+}
+.program_bg_img{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    height: 90%;
+    z-index: 9;
+}
+/* ========== Program Area Css Here End ==========  */
+/* ========== Gallery Area Css Here Start ==========  */
+.gallery_for_bg {
+	position: relative;
+	padding-bottom: 150px;
+}
+.gallery_bg_img {
+	position: absolute;
+	/* top: 0; */
+	left: 50%;
+	transform: translateX(-50%);
+	height: auto;
+	width: 95%;
+	z-index: -9;
+	/* object-fit: cover; */
+	bottom: 0px;
+}
+.gallery_box h3{
+    font-size: 85px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+    margin-top: 83px;
+}
+.gallery_slider_display p{
+    font-size: 33px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+}
+.gallery_slider_for_tabs{
+    padding: 0px 20px;
+}
+.gallery_slider_display{
+    position: relative;
+    background-color: #FFFFFF;
+}
+.gallery_slider_right_arrow{
+    position: absolute;
+    right: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    cursor: pointer;
+}
+.gallery_slider_left_arrow{
+    position: absolute;
+    left: -80px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80px;
+    cursor: pointer;
+}
+.gallery_tabs_items img{
+    width: 100%;
+    padding: 10px 10px 0px 10px;
+}
+.gallery_button{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.gallery_button a img{
+    height: 70px;
+    padding-left: 30px;
+}
+.gallery_button a{
+    font-size: 33px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+}
+/* ========== Gallery Area Css Here End ==========  */
+/* ========== Reviews Area Css Here Start ==========  */
+.review_for_bg {
+	position: relative;
+	margin-bottom: 330px;
+}
+.review_bg_img {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 93%;
+	z-index: -9;
+	bottom: 0;
+}
+.review_title h3 {
+	font-size: 91px;
+	color: #DC850A;
+	font-family: 'save_lemon';
+	margin-top: 80px;
+}
+.review_items{
+    background-color: #F1F1F1;
+    border-radius: 31px;
+}
+.review_box{
+    margin-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.review_items img{
+    width: 188px;
+    height: 188px;
+    border-radius: 100px;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+.review_items h4{
+   margin-top: 30px;
+   color: #0593A6;
+   font-size: 50px;
+   font-family: 'save_lemon';
+}
+.review_items p{
+    padding: 0px 23px 35px 23px;
+    text-align: start;
+    font-size: 28px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+    line-height: 28px;
+}
+.review_box_side_p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/* ========== Reviews Area Css Here End ==========  */
+/* ========== Contact Us Area Css Here Start ==========  */
+.contact_title h3{
+    font-size: 91px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+    margin-top: 80px;
+    margin-bottom: 140px;
+}
+.contact_box {
+	margin-bottom: 450px;
+}
+.contact_box a img{
+    height: 120px;
+}
+.contact_box a h4{
+    color: #058C9F;
+    font-size: 91px;
+    font-family: 'save_lemon';
+}
+.contact_for_bg {
+	position: relative;
+	padding-top: 60px;
+}
+.contact_bg_img{
+    position: absolute;
+	
+	left: 50%;
+	transform: translateX(-50%);
+	width: 95%;
+	z-index: -9;
+	bottom: 0;
+}
+/* ========== Contact Us Area Css Here End ==========  */
+/* ========== Copyright Area Css Here Start ==========  */
+#copyright_area{
+    background-color: #058C9F;
+    text-align: center;
+}
+.copyright_text h4{
+    font-size: 33px;
+    color: #FFFFFF;
+    font-family: 'emone_bold';
+    padding: 25px 0px;
+    margin-bottom: 0px;
+}
+/* ========== Copyright Area Css Here End ==========  */
+
+/* ======================================================= */
+/* ========== About Us Page Css Start Here ==========  */
+/* ======================================================= */
+
+/* ========== Navbar Area Css Here Start ==========  */
+#about_page .navbar {
+	position: unset !important;
+	z-index: 99999;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+#about_page .navbar-brand img {
+	height: 131px;
+	position: unset !important;
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+}
+#about_page .nav-link {
+	margin-top: 0px !important;
+}
+/* ========== Navbar Area Css Here End ==========  */
+/* ========== About Page Section Area Css Here Start ==========  */
+.about_part_one_text h3{
+    font-size: 91px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+    margin-top: 162px;
+}
+.about_part_one_text p{
+    font-size: 29px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+    margin-top: 50px;
+    line-height: 34px;
+    padding-left: 60px;
+}
+.about_part_one_text span{
+    font-size: 29px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+    margin-top: 50px;
+    line-height: 100px;
+    padding-left: 60px;
+}
+.about_part_one_slider{
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.about_part_one_text img{
+    height: 180px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+.about_pos_items{
+    text-align: center;
+}
+.about_pos_items img{
+    height: 512px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 51px;
+}
+.about_slider_left_arrow{
+    position: absolute;
+    height: 54px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25px;
+    cursor: pointer;
+}
+.about_slider_right_arrow{
+    position: absolute;
+    height: 54px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    cursor: pointer;
+}
+.about_p_o_s_main  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.about_p_o_s_main  .slick-dots li{
+    width: 25px;
+    height: 25px;
+    padding: 18px 3.1px 0px 3.1px;
+    margin: 0px 3px;
+}
+.about_p_o_s_main  .slick-dots li button{
+    width: 25px;
+    height: 25px;
+    color: transparent;
+    border: none;
+    border-radius: 100px;
+    background-color: #E38C0A;
+}
+.about_p_o_s_main  .slick-dots li.slick-active button{
+    background-color: #058C9F;
+}
+.about_part_two .about_part_two_slider_main  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.about_part_two .about_part_two_slider_main  .slick-dots li{
+    width: 25px;
+    height: 25px;
+    padding: 18px 3.1px 0px 3.1px;
+    margin: 0px 3px;
+}
+.about_part_two .about_part_two_slider_main  .slick-dots li button{
+    width: 25px;
+    height: 25px;
+    color: transparent;
+    border: none;
+    border-radius: 100px;
+    background-color: #E38C0A;
+}
+.about_part_two .about_part_two_slider_main  .slick-dots li.slick-active button{
+    background-color: #058C9F;
+}
+.about_bottom_fak{
+    margin-bottom: 160px;
+}
+.about_part_two .about_part_one_slider {
+	margin-top: 120px;
+	margin-right: 50px;
+    margin-left: 0px;
+}
+.about_page_for_bg {
+	position: relative;
+	padding-bottom: 90px;
+}
+.about_page_bg_img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	/* height: 100%; */
+	width: 80%;
+	z-index: -9;
+}
+/* ========== About Page Section Area Css Here End ==========  */
+
+/* ======================================================= */
+/* ========== The Program Page Css Start Here ==========  */
+/* ======================================================= */
+
+/* ========== programm Page Section Area Css Here Start ==========  */
+.program_page_p_two_box img{
+    width: 335px;
+}
+.program_page_title h3{
+    font-size: 91px;
+    line-height: 103px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.program_page_dis h3{
+    font-size: 80px;
+    line-height: 69px;
+    color: #058C9F;
+    font-family: 'save_lemon';
+}
+.program_page_part_two h3{
+    font-size: 91px;
+    line-height: 103px;
+    color: #058C9F;
+    font-family: 'save_lemon';
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+.program_page_dis p{
+    font-size: 28px;
+    line-height: 33px;
+    color: #1B3A3A;
+    font-family: 'emone_bold';
+    margin-top: 15px;
+    margin-bottom: 80px;
+}
+.program_page_download_btn a{
+    font-size: 50px;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-family: 'emone_bold';
+    background-color: #DC850A;
+    padding: 15px 31px;
+    border-radius: 30px;
+}
+.program_page_p_two_box{
+    text-align: center;
+}
+.program_page_p_two_box img{
+    border-radius: 30px;
+    margin-bottom: 46px;
+}
+.program_page_p_two_box h4{
+    font-size: 46px;
+    line-height: 55px;
+    color: #058C9F;
+    font-family: 'save_lemon';
+    margin-bottom: 60px;
+}
+.program_number{
+    text-align: center;
+}
+.program_number h3{
+    font-size: 165px;
+    line-height: 198px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+}
+.program_number p{
+    font-size: 46px;
+    line-height: 55px;
+    color: #1B3A3A;
+    font-family: 'save_lemon';
+    margin-bottom: 56px;
+}
+
+.program_page_last_btn a {
+	font-size: 50px;
+	line-height: 60px;
+	color: #FFFFFF;
+	font-family: 'emone_bold';
+	background-color: #058C9F;
+	padding: 15px 31px;
+	border-radius: 30px;
+    margin-bottom: 100px;
+}
+.program_page_more_link{
+    margin-top: 100px;
+}
+.program_page_more_link a{
+    font-style: 40px;
+    line-height: 48px;
+    color: #058C9F;
+    font-family: 'save_lemon';
+}
+.program_page_for_bg{
+    position: relative;
+}
+.program_page_bg_img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 0;
+	width: 90%;
+	z-index: -9;
+}
+/* ========== programm Page Section Area Css Here End ==========  */
+
+/* ======================================================= */
+/* ========== The Gallery Page Css Start Here ==========  */
+/* ======================================================= */
+
+/* ========== Gallery Page Section Area Css Here Start ==========  */
+.gallery_page_title{
+    margin-top: 110px;
+}
+.gallery_page_title h3{
+    font-size: 91px;
+    line-height: 109px;
+    color: #DC850A;
+    font-family: 'save_lemon';
+}
+.gallery_page_allbum img{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+.gallery_page_for_bg{
+    position: relative;
+}
+.gallery_page_bg_img{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    z-index: -9;
+}
+/* ========== Gallery Page Section Area Css Here End ==========  */
+
+.my_map_contact {
+    background-color: #1B3A3A;
+    padding: 20px 0px;
+}
+.my_map_contact .sub_text h3{
+    color: #DC850A;
+    font-size: 59px;
+    font-family: 'save_lemon';
+}
+.my_map_contact .sub_form input{
+    height: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #707070;
+    font-size: 30px;
+	font-family: 'emone_bold';
+}
+.my_map_contact .sub_form button{
+    font-size: 30px;
+    background-color: #E58E0A;
+    color: #1B3A3A;
+    border: none;
+    margin-left: 10px;
+	font-family: 'emone_bold';
+}
+.map_section{
+    background-color: #058C9F;
+    padding: 10px 0px;
+}
+.map_section h3{
+    font-size: 28px;
+	font-family: 'emone_bold';
+    color: #FFFFFF;
+}
+.map_section p{
+    font-size: 28px;
+	font-family: 'emone_bold';
+    color: #FFFFFF;
+}
+.map_pahar {
+    position: absolute;
+    bottom: 20px;
+    right: 0%;
+}
+#about_items .about_items{
+    text-align: center;
+    padding: 0px 5px;
+}
+#about_items .about_items img{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+#about_items .about_items p{
+    font-size: 20px !important;
+    padding-left: 0px;
+    text-align: center;
+}
+#about_items .about_items span{
+    font-size: 20px !important;
+    color: #058C9F;
+    padding-left: 0px;
+}
+.program_page_p_two_box span img {
+	width: 10px;
+	margin-bottom: 2px;
+	margin-right: 10px;
+}
+.program_page_p_two_box span  {
+	color: #1B3A3A;
+}
+#about_page{
+    position: relative;
+    z-index: 99999999999 !important;
+}

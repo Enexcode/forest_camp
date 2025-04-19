@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="519.572" height="161.455" viewBox="0 0 519.572 161.455">
+  <g id="g-patha" transform="translate(-1192.213 -49.113)">
+    <g id="patha">
+      <path id="Path_881" data-name="Path 881" d="M1206.361,1868.535s92.889-120.385,234.364-52.848,169.57,112.692,243.5,125.66" transform="translate(0 -1744)" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4" opacity="0.45"/>
+      <g id="Group_205" data-name="Group 205" transform="translate(0 -1744)" opacity="0.45">
+        <line id="Line_78" data-name="Line 78" x2="16.193" y2="16.193" transform="translate(1193.627 1875.434)" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4"/>
+        <line id="Line_79" data-name="Line 79" x1="16.193" y2="16.193" transform="translate(1193.627 1875.434)" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4"/>
+      </g>
+      <circle id="Ellipse_12" data-name="Ellipse 12" cx="9.518" cy="9.518" r="9.518" transform="translate(1690.748 189.531)" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4" opacity="0.45"/>
+    </g>
+    <g id="Group_209" data-name="Group 209" transform="translate(0 -1744)" opacity="0.45">
+      <path id="Path_903" data-name="Path 903" d="M1361.9,1904.271s19.448,24.8,28.39,21.542,4.623-15.327,4.623-15.327,13.324,4.461,17.939-.2-1.582-9.99-1.582-9.99,10.832-.571,14.934-7.5-5.523-4.191-5.523-4.191,22.116-12.1,17.574-22.45-22.71,4.114-22.71,4.114,4.152-8.78-1.886-11.478-11.845,9.219-11.845,9.219-2.307-11.168-8.448-10.177-8.569,14.844-8.569,14.844-2.822-19.721-15.3-4.7S1361.9,1904.271,1361.9,1904.271Z" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4"/>
+      <path id="Path_904" data-name="Path 904" d="M1337.733,1909.788s55.665-13.639,81.632-32.232" fill="none" stroke="#dc850a" stroke-miterlimit="10" stroke-width="4"/>
+    </g>
+  </g>
+</svg>
